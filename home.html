@@ -1,94 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>This is MusicAlly</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicAlly</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a71247737b.js" crossorigin="anonymous"></script>
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/w3images/mac.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
-.w3-bar-item {
-    background-color: #EBEBEB;
-}
-
-</style>
 </head>
-
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar__logo">MusicAlly</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar__menu">
+            <a href="#" class="navbar__link">Home</a>
+            <a href="/event.html" class="navbar__link">Event</a>
+            <a href="/payment.html" class="navbar__link">Payment</a>
+            <a href="/profile.html" class="navbar__link">Profile</a>
+        </div>
+    </nav>
+<!-- homepage body text -->
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">MusicAlly</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#home" class="w3-bar-item w3-button">HOME</a>
-      <a href="#event" class="w3-bar-item w3-button"><i class="fa fa-th"></i> EVENT</a>
-      <a href="#payment" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PAYMENT</a>
-      <a href="#profile" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PROFILE</a>
-      <a href="#login" class="w3-button" style="background-color:black; color:white"><i class="fa fa-arrow-circle-right"></i> Musician Log In</a>
+<div class="homepagebodys">
+  <div class="homepagebodys__container">
+    <div>
+      <h1 class="topline">Be the best part of the show!</h1> <br>
+      <p class="homepagebodys_heading">With MusicAlly, you can become a part of the show by requesting your favorite songs to be played by the artist!</p><br>
+      <div class="homepagebodys__features">
+        <p class="homepagebodys__feature"><i class="fas fa-check-circle"></i>  Request songs
+        </p>
+        <p class="homepagebodys__feature"><i class="fas fa-check-circle"></i>  Add a tip to jump the queue
+        </p>
+        <p class="homepagebodys__feature"><i class="fas fa-check-circle"></i>  Securely add payment methods
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-black" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Be the best part of the show!</span><br>
-    <span class="w3-large">With MusicAlly, you can become a part of the show by requesting your favorite songs to be played by the artist! </span>
-    <br><br>
-    <span class="w3-large"><i class="fa fa-check"></i> Request songs</span><br>
-    <span class="w3-large"><i class="fa fa-check"></i> Add a tip to jump the queue</span><br>
-    <span class="w3-large"><i class="fa fa-check"></i> Securely add payment methods</span><br>
-    <p><a href="#profile" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Search Event</a></p>
+<!-- Search Event Homepage box -->
+<div id="test">
+<div class="container__search show">
+    <div class="wrapper">
+      <input type="text" name="search" id="search" placeholder="Search event..." autocomplete="chrome-off">
+      <button><i class="fa fa-search"></i></button>
+      <div class="results">
+      <p><b> Recent </b></p>
+        <ul>
+          <li> Halloweekend Rocks! </li>
+          <li> Japanese Breakfast </li>
+          <li> Country Time Fun </li>
+          <li> End of Summer Bash </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</header>
+</div>
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="footer">
+    <div class="footer__container container">
+
+        <div class="footer__list">
+            <p>
+                <a href="#" class="footer__link">About</a>
+            </p>
+            <p>
+                <a href="#" class="footer__link">Our Team</a>
+            </p>
+            <p>
+                <a href="#" class="footer__link">Contact</a>
+            </p>
+        </div>
+
+    </div>
 </footer>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
+      <!-- js -->
+      <script src="js\app.js"></script>
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-</script>
-
-</body>
-</html>
+  </body>
+  </html>
