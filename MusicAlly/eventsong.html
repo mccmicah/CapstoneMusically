@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicAlly</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/a71247737b.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="home.html" class="navbar__logo">MusicAlly</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="navbar__menu">
+      <a href="home.php" class="navbar__link">Home</a>
+      <a href="event.html" class="navbar__link">Event</a>
+      <a href="http://localhost:3000/login.php" class="navbar__link">Musician Login</a>
+
+    </div>
+  </nav>
+
+  <button id="btn2" class="btn2">
+    <span>Request</span>
+    <svg class="checkmark" viewBox="0 0 52 52">
+      <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+    </svg>
+  </button>
+
+  <button id="btn3" class="btn3">
+    <span>Request</span>
+    <svg class="checkmark" viewBox="0 0 52 52">
+      <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+    </svg>
+  </button>
+
+  <button id="btn4" class="btn4">
+    <span>Request</span>
+    <svg class="checkmark" viewBox="0 0 52 52">
+      <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+    </svg>
+  </button>
+
+  <div class="artistcontainer">
+    <div class="text1">
+      Hosted By:
+    </div>
+    <div class="text2">
+      <b>Artist Name</b>
+    </div>
+    <div class="text3">
+      Location name
+    </div>
+    <div>
+      <img class="img" src="img/img_avatar.png" alt="Avatar" style="width:50px">
+    </div>
+  </div>
+  <div class="artistcontainer2" style="position:absolute; left: 0px; top:422.5px;">
+    <div class="text4">
+      <b>Event Name</b>
+    </div>
+    <div class="text5">
+      Event address
+      <br> Event date
+      <br> Event time<br>
+    </div>
+  </div>
+  <div class="btns">
+    <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></Button>
+  </div>
+  <section class="text6" style="position:absolute; left:620px; top:85px;">
+    <b>Request song</b>
+  </section>
+  <section class="eventsearchcontainer" style="position:absolute; left:600px; top:90px;">
+    <form>
+      <i class="fas fa-search"></i>
+      <input type="text" name="" id="search-item" placeholder="Search by song or artist name...">
+    </form>
+  </section>
+  <section class="text7" style="position:absolute; left:620px; top:170px;">
+    <b>Song search results</b>
+  </section>
+  <section class="text8">
+    <b>Song name</b>
+  </section>
+  <section class="text9">
+    Artist Name <br>
+    Song release year
+  </section>
+  <section class="text10">
+    <b>Song name</b>
+  </section>
+  <section class="text11">
+    Artist Name <br>
+    Song release year
+  </section>
+  <section class="text12">
+    <b>Song name</b>
+  </section>
+  <section class="text13">
+    Artist Name <br>
+    Song release year
+  </section>
+  <script>
+
+    var btnvar1 = document.getElementById('btnh1');
+
+    function Toggle1() {
+      if (btnvar1.style.color == "red") {
+        btnvar1.style.color = "grey"
+      }
+      else {
+        btnvar1.style.color = "red"
+      }
+    }
+
+  </script>
+
+  <!-- js -->
+  <script src="js/app.js"></script>
+  <script src="js/app2.js"></script>
+
+</body>
+
+</html>
