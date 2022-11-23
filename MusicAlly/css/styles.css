@@ -185,6 +185,44 @@
   outline-color: #e1e2e6;
 }
 
+.eventcontainer {
+  border-radius: 10px;
+  background-color: #e1e2e6;
+  color: black;
+  height: 27rem;
+  width: 25.1rem;
+  padding: 70px; /* move to side */
+  margin: 62px; /* move the whole block */
+  margin-top: 100px; /* move block down*/
+  margin-left: 20px; /* move block left*/
+  padding-top: 200px; /* move text down*/
+  overflow: hidden;
+  font-size: 15px;
+  position: float;
+  text-align: center;
+  visibility: hidden;
+}
+
+.eventcontainer2 {
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+  height: 10rem;
+  width: 24.84111rem;
+  padding: 10px; /* move text */
+  padding-top: 27px; /* move text */
+  padding-left: 25px; /* move text */
+  margin: 10px; /* move the whole block */
+  margin-top: -0px; /* move block down*/
+  margin-left: 1.35rem; /* move block left*/
+  font-size: 15px;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+  border: 1.5px solid #e1e2e6;
+  outline-style: solid;
+  outline-color: #e1e2e6;
+  visibility: hidden;
+}
+
 .img {
   border-radius: 50%;
   padding: -150px; /* move to side */
@@ -222,6 +260,13 @@
 .btns {
   position: absolute;
   top: 216px;
+  left: 328px;
+  display: flex;
+}
+
+.eventbtns {
+  position: absolute;
+  top: 300px;
   left: 328px;
   display: flex;
 }
@@ -339,6 +384,20 @@
 }
 
 .btn2.clicked {
+  animation: scale 0.3s ease-in-out 0.9s both, shrink 4s ease-in-out forwards;
+}
+
+.btnabout {
+  width: 100px;
+  height: 30px;
+  background: #016e79;
+  border-radius: 10px;
+  cursor: pointer;
+  place-items: center;
+  overflow: hidden;
+}
+
+.btnabout.clicked span{
   animation: scale 0.3s ease-in-out 0.9s both, shrink 4s ease-in-out forwards;
 }
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicAlly</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/a71247737b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="home.html" class="navbar__logo">MusicAlly</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="navbar__menu">
+      <a href="home.php" class="navbar__link">Home</a>
+      <a href="event.html" class="navbar__link">Event</a>
+      <a href="http://localhost:3000/login.php" class="navbar__link">Musician Login</a>
+
+    </div>
+  </nav>
+
+    <section class="text6" style="position:absolute;left:70px;top:85px;">
+      <b>Search Event:</b>
+    </section>
+    <section class="eventsearchcontainer" style="position:absolute;left:50px;top:90px;">
+        <input type="search" id="event-search" name="event" placeholder="Search by event name...">
+        <button onclick="search()" id="button1"><i class="fas fa-search"></i></button>
+    </section>
+
+    <div class="text1" id="no-results" style="position:absolute;left:100px;top:200px; display:none">
+      No results found.
+    </div>
+
+    <div class="eventcontainer" id="event1">
+      <div class="text1">
+        Hosted By:
+      </div>
+      <div class="text2">
+        <b>Artist Name</b>
+      </div>
+      <div class="text3">
+        Location name
+      </div>
+      <div>
+        <img class="img" src="img/img_avatar.png" alt="Avatar" style="width:50px">
+      </div>
+    </div>
+    <div class="eventcontainer2" id="event2" style="position:absolute; left: 0px; top:422.5px;">
+      <div class="text4">
+        <b>Event Name</b>
+      </div>
+      <div class="text5">
+        Event address
+        <br> Event date
+        <br> Event time<br>
+      </div>
+    </div>
+
+
+  <script>
+
+    function search() {
+      var result1 = document.getElementById('event1');
+      var result2 = document.getElementById('event2');
+      var noresult = document.getElementById('no-results');
+      var searchinput = document.getElementById('event-search');
+      if (searchinput.value == "Event") {
+        result1.style.visibility = "visible";
+        result2.style.visibility = "visible";
+      }
+      else {
+        result1.style.visibility = "hidden";
+        result2.style.visibility = "hidden";
+        noresult.style.display = "inline";
+      }
+    }
+
+  </script>
+
+  <script src="js/app.js"></script>
+  <script src="js/app2.js"></script>
+
+</body>
+
+</html>
