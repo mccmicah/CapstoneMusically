@@ -155,11 +155,11 @@
   color: black;
   height: 27rem;
   width: 25.1rem;
-  padding: 70px; /* move to side */
-  margin: 62px; /* move the whole block */
-  margin-top: 30px; /* move block down*/
-  margin-left: 20px; /* move block left*/
-  padding-top: 200px; /* move text down*/
+  padding: 70px;
+  margin: 62px;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-top: 200px;
   overflow: hidden;
   font-size: 15px;
   position: float;
@@ -171,12 +171,12 @@
   background-color: white;
   height: 10rem;
   width: 24.84111rem;
-  padding: 10px; /* move text */
-  padding-top: 27px; /* move text */
-  padding-left: 25px; /* move text */
-  margin: 10px; /* move the whole block */
-  margin-top: -62px; /* move block down*/
-  margin-left: 1.35rem; /* move block left*/
+  padding: 10px;
+  padding-top: 27px;
+  padding-left: 25px;
+  margin: 10px;
+  margin-top: -62px;
+  margin-left: 1.35rem;
   font-size: 15px;
   color: black;
   border-radius: 0px 0px 10px 10px;
@@ -225,25 +225,25 @@
 
 .img {
   border-radius: 50%;
-  padding: -150px; /* move to side */
-  margin: -50px; /* move the whole block */
-  margin-bottom: 60px; /* move block down*/
-  margin-right: 220px; /* move block left*/
+  padding: -150px;
+  margin: -50px;
+  margin-bottom: 60px;
+  margin-right: 220px;
 }
 
 .text1 {
   font-size: 13px;
-  margin-right: 120px; /* move block down*/
+  margin-right: 120px;
 }
 
 .text2 {
   font-size: 15px;
-  margin-right: 100px; /* move block down*/
+  margin-right: 100px;
 }
 
 .text3 {
   font-size: 13px;
-  margin-right: 100px; /* move block down*/
+  margin-right: 100px;
 }
 
 .text5 {
