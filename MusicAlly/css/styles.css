@@ -191,11 +191,11 @@
   color: black;
   height: 27rem;
   width: 25.1rem;
-  padding: 70px; /* move to side */
-  margin: 62px; /* move the whole block */
-  margin-top: 100px; /* move block down*/
-  margin-left: 20px; /* move block left*/
-  padding-top: 200px; /* move text down*/
+  padding: 70px;
+  margin: 62px;
+  margin-top: 100px;
+  margin-left: 20px;
+  padding-top: 200px;
   overflow: hidden;
   font-size: 15px;
   position: float;
@@ -208,12 +208,12 @@
   background-color: white;
   height: 10rem;
   width: 24.84111rem;
-  padding: 10px; /* move text */
-  padding-top: 27px; /* move text */
-  padding-left: 25px; /* move text */
-  margin: 10px; /* move the whole block */
-  margin-top: -0px; /* move block down*/
-  margin-left: 1.35rem; /* move block left*/
+  padding: 10px;
+  padding-top: 27px;
+  padding-left: 25px;
+  margin: 10px;
+  margin-top: -0px;
+  margin-left: 1.35rem;
   font-size: 15px;
   color: black;
   border-radius: 0px 0px 10px 10px;
