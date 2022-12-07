@@ -43,7 +43,7 @@ function renderResults(results) {
 
   const content = results
     .map((item) => {
-      return `<li><a href="#"> ${item} </a></li>`;
+      return `<li><a href="http://shussein23.store/MusicAlly/eventinfo.php?id=29"> ${item} </a></li>`;
     })
     .join("");
 
