@@ -12,8 +12,8 @@ include_once 'includes/functions.inc.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MusicAlly</title>
   <link rel="stylesheet" href="css/styles.css">
+
   <script src="https://kit.fontawesome.com/a71247737b.js" crossorigin="anonymous"></script>
-  <script src="js\app.js"></script>
 
 </head>
 
@@ -28,7 +28,7 @@ include_once 'includes/functions.inc.php';
     </div>
     <div class="navbar__menu">
       <a href="home.php" class="navbar__link">Home</a>
-      <a href="event.html" class="navbar__link">Event</a>
+      <a href="event.php" class="navbar__link">Event</a>
       <?php
       if (isset($_SESSION["useruid"])) {
         echo '<a href="profile.php" class="navbar__link">Profile</a>';
@@ -37,8 +37,13 @@ include_once 'includes/functions.inc.php';
         echo '<a href="login.php" class="navbar__link">Musician Login</a>';
       }
       ?>
-
+    </div>
   </nav>
 
-  </div>
-  </nav>
+  <!-- js -->
+  <script src="js\app.js"></script>
+  <script src="js\app2.js"></script>
+
+</body>
+
+</html>
